@@ -1,0 +1,193 @@
+/* J'ai eu quelques soucis avec flexbox et la taille des images. C'est certainement lié au fait que les pourcentages ne sont pas traités pareil sous HTML que sous CSS. J'ai choisi de rendre invisible les barres de scroll pour créer l'illusion d'un site à plusieurs pages. Je n'ai pas su comment faire pour la faire apparaitre à la commande. J'aurais sans doute du m'y prendre plus tôt et solliciter de l'aide auprès de vous ou de mon entourage mais je préfère faire tout tout seul puis ensuite écouter les retours. En échouant, j'apprends mieux et surtout je sais que je vais être d'autant plus attentifs aux propos des autres car j'aurais eu la preuve que je n'avais pas la science infuse (au cas où j'aurais eu un doute haha). J'ai pris beaucoup de plaisir à faire ce site même si je suis forcément déçu par les soucis que j'ai pas su résoudre sauf de temps ou de connaissance. J'espère que vous pourrez en avoir un bon  rendu quand même. Je vous remercie ! PS: j'ai tout uploadé mais je vais aussi vous envoyer un zip.*/
+ul#navigation {
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    top: 30px;
+    left: 0px;
+    list-style: none;
+    z-index:9999;
+}
+ul#navigation li {
+    width: 100px;
+}
+ul#navigation li a {
+    display: block;
+    margin-left: -2px;
+    width: 100px;
+    height: 70px;    
+    background-color:#CFCFCF;
+    background-repeat:no-repeat;
+    background-position:center center;
+    border:1px solid #AFAFAF;
+    -moz-border-radius:0px 10px 10px 0px;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -khtml-border-bottom-right-radius: 10px;
+    -khtml-border-top-right-radius: 10px;
+    
+    opacity: 0.9;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+}
+ul#navigation .home a{
+    background-image: url(home.ico);
+}
+ul#navigation .about a      {
+    background-image: url(about.ico);
+}
+ul#navigation .show1 a{
+    background-image: url(dance.ico);
+}
+
+ul#navigation .show2 a      {
+    background-image: url(val.ico);
+}
+ul#navigation .show3 a{
+    background-image: url(zebra.ico);
+
+}
+
+ul#navigation .tribute a{
+    background-image: url(kw2.ico);
+}
+
+/*Imports Police */
+
+@font-face {
+    font-family: 'Walkway_Black';
+    src: url('Walkway_Black.ttf') format('truetype');}
+
+@font-face {
+    font-family: 'Walkway_UltraBold';
+    src: url('Walkway_UltraBold.ttf') format('truetype');}
+
+@font-face{
+    font-family: 'CaviarDreams';
+    src: url('CaviarDreams.ttf') format('truetype');}
+
+@font-face{
+    font-family: 'CaviarDreamsBold';
+    src: url('CaviarDreams_Bold.ttf') format('truetype');}
+
+@font-face{
+    font-family: 'CaviarDreamsItalic';
+    src: url('CaviarDreams_Italic.ttf') format('truetype');}
+
+@font-face{
+    font-family: 'Pacifico';
+    src: url('Pacifico.ttf') format('truetype');}
+
+@font-face{
+    font-family: 'CaviarDreamsBoldItalic';
+    src: url('CaviarDreams_BoldItalic.ttf') format('truetype');}
+    
+    
+    
+    
+
+/*mise en page du site */
+header
+{
+    position: fixed;
+    left: 30px;
+    top: 0px;
+font-size: large; font-family: 'Walkway_UltraBold'; text-align: center;
+color:rgb(250,100,35);
+opacity: 0.7;}
+
+footer
+{ 
+    position: fixed;
+    right: 20%;
+    bottom: 0px;
+font-family: 'Walkway_UltraBold'; text-align: center; font-size: small;
+color: rgb(185,150,10);
+text-shadow: 2px 2px 4px black; }
+
+body 
+{ overflow-x: hidden; overflow-y: hidden;
+ background: url("http://i68.tinypic.com/x0sdg3.jpg")  bottom right no-repeat, url("http://i66.tinypic.com/wbxxrr.jpg") fixed;
+color: rgb(240,240,10);
+text-shadow: 2px 2px 4px black;
+font-family: 'CaviarDreams', Calibri, sans-serif; text-align: left;
+font-style: normal; font-weight: normal;
+ height: 100%; margin-left: 20px; margin-right: 20px;}
+
+ em
+ {font-style: italic;
+    color: rgb (250,250,10);}
+
+strong
+{font-weight: bolder;
+color:(240,220,4);}
+
+
+section
+{min-height: 100%;}
+
+
+#layout1 {display: flex;
+    justify-content: space-around;
+     align-items: center;
+}
+
+#layout2 {display: flex;
+    justify-content: space-around;
+     align-items: center;
+    flex-direction: row-reverse;
+}
+
+#layout3 {display: flex;
+    justify-content: space-around;
+     align-items: center;
+}
+
+#layout4 {display: flex;
+    justify-content: space-around;
+     align-items: center;
+    flex-direction: row-reverse;
+}
+
+
+
+h1{font-size: xx-large; text-align: center;
+font-family: 'Pacifico';
+color: red;
+}
+.soussec
+{font-size: xx-large; text-align: center;
+font-family: 'Pacifico';
+color: red;
+margin-top: 20%;}
+
+h2
+{font-style: x-large; text-align: center;}
+
+p
+{text-indent: 2em;
+    font-size: large; text-align: justify; margin-right:5%; margin-left: 5%;}
+
+a:hover
+{
+    color: red;
+   font-weight: bold;
+   text-shadow: 10px 10px 10px black;
+}
+a
+{color: orange;
+text-decoration: none;
+font-family:'CaviarDreams';}
+
+a:visited {color: green;}
+
+
+
+
+
+.monkey {float:left;}
+.val {float: right;}
+.zebras{float: left;}
+.video {text-align: center;}
+.earth{float: left;}
+
+.bye {text-align: center;}
